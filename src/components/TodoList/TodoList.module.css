@@ -1,0 +1,102 @@
+.todo_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.todo_input {
+  width: 80%;
+  padding: 5px 15px;
+  font-size: 25px;
+}
+
+.todo_btn {
+  padding: 9px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+
+  background-color: bisque;
+  border: none;
+}
+
+.todo_btn:hover {
+  color: #fff;
+  background-color: rgb(175, 155, 130);
+}
+
+.todo_list_title {
+  font-size: 25px;
+  color: rgb(253, 146, 15);
+  font-weight: bold;
+  margin-bottom: -15px;
+}
+
+.todo_item {
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  width: 74%;
+  margin: 15px auto;
+  border: 1px solid #000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 5px 20px;
+}
+
+.todo_item_left {
+  z-index: 0;
+}
+
+.todo_item_right {
+  display: flex;
+  align-items: center;
+  z-index: 20;
+}
+
+.todo_item_complete {
+  width: 20px;
+  height: 20px;
+  color: blue;
+}
+
+.todo_item_complete:checked {
+  content:"";
+  color: blue;
+  background-color: #fff;
+} 
+
+#highload4:checked:before {
+  padding: initial;
+  font-weight: bold;
+}
+
+.todo_item_del {
+  border: none;
+  background-color: transparent;
+  font-size: 22px;
+  font-weight: bold;
+  color: red;
+}
+
+.todo_item_del:hover {
+  cursor: pointer;
+  color: rgb(100, 7, 7);
+}
+
+.todo_item_resolved {
+  background-color: gray;
+  position: relative;
+  width: 69%;
+  height: 1px;
+  top: 40px;
+  left: -38px;
+  z-index: 10;
+}
